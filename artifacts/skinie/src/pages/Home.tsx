@@ -90,6 +90,25 @@ export default function Home() {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/5 via-transparent to-background/60" />
         </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.05, ease, delay: 0.2 }}
+          className="pointer-events-none absolute left-8 top-36 z-10 max-w-[11rem] md:left-10 md:top-[19%] md:max-w-[18rem]"
+        >
+          <h1 className="font-display text-4xl font-bold leading-[0.9] text-foreground/90 drop-shadow-[0_2px_14px_rgba(255,255,255,0.8)] md:text-6xl">
+            Skinie
+            <span className="block font-serif italic font-normal text-primary/90">
+              Aesthetic
+            </span>
+          </h1>
+          <p className="mt-4 max-w-[9rem] text-[0.62rem] font-semibold uppercase tracking-[0.24em] text-foreground/65 drop-shadow-[0_1px_10px_rgba(255,255,255,0.95)] md:mt-5 md:max-w-[15rem] md:text-xs">
+            Glow doux, textures pastel, rituels sensoriels.
+          </p>
+          <p className="mt-3 max-w-[10rem] text-xs leading-relaxed text-foreground/70 drop-shadow-[0_1px_12px_rgba(255,255,255,0.95)] md:max-w-[16rem] md:text-base">
+            Des essentiels soin, lèvres et cheveux pensés comme une pause solaire.
+          </p>
+        </motion.div>
       </section>
 
       {/* ══ BESTSELLERS ══ */}

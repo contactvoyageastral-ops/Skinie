@@ -1,0 +1,5 @@
+{
+  "installCommand": "corepack pnpm install --ignore-scripts",
+  "buildCommand": "corepack pnpm --filter @workspace/skinie run build",
+  "outputDirectory": "artifacts/skinie/dist/public"
+}
